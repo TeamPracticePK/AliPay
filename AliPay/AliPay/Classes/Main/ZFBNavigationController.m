@@ -44,6 +44,12 @@
      UIBarMetricsCompactPrompt          压缩带提示(横屏)
      */
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar7"] forBarMetrics:UIBarMetricsDefault];
+    
+    //2.修改标题文本(前景)颜色 - 通过字典设置文本属性,可以非常灵活
+    self.navigationBar.titleTextAttributes = @{
+                                               NSForegroundColorAttributeName:[UIColor whiteColor]
+                                               };
+    
 }
 
 
