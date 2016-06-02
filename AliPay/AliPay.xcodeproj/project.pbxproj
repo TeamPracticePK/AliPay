@@ -34,6 +34,7 @@
 		18A48A391CFFCE4A00E0C4E8 /* ZFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A381CFFCE4A00E0C4E8 /* ZFBHomeViewController.m */; };
 		18A48A3F1CFFCE8800E0C4E8 /* ZFBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */; };
 		18A48A421CFFCEA600E0C4E8 /* ZFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */; };
+		18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,8 @@
 		18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMainViewController.m; sourceTree = "<group>"; };
 		18A48A401CFFCEA600E0C4E8 /* ZFBMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMineViewController.h; sourceTree = "<group>"; };
 		18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMineViewController.m; sourceTree = "<group>"; };
+		18A48A431CFFE1A000E0C4E8 /* ZFBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBNavigationController.h; sourceTree = "<group>"; };
+		18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +274,8 @@
 			children = (
 				18A48A3D1CFFCE8800E0C4E8 /* ZFBMainViewController.h */,
 				18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */,
+				18A48A431CFFE1A000E0C4E8 /* ZFBNavigationController.h */,
+				18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				18A48A0A1CFFC97D00E0C4E8 /* MASLayoutConstraint.m in Sources */,
 				18A489D51CFFC4D200E0C4E8 /* main.m in Sources */,
 				18A48A101CFFC97D00E0C4E8 /* ViewController+MASAdditions.m in Sources */,
+				18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */,
 				18A48A0F1CFFC97D00E0C4E8 /* View+MASAdditions.m in Sources */,
 				18A48A231CFFCA5800E0C4E8 /* NSObject+CZAddition.m in Sources */,
 				18A48A0B1CFFC97D00E0C4E8 /* MASViewAttribute.m in Sources */,
