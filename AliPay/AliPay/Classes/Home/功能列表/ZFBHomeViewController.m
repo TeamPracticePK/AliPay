@@ -7,6 +7,7 @@
 //
 
 #import "ZFBHomeViewController.h"
+#import "ZFBCommonFunctionView.h"
 #import "Masonry.h"
 #import "CZAdditions.h"
 
@@ -33,7 +34,7 @@
 - (void)setupUI {
     
     // 顶部视图 UIView
-    UIView *topView = [[UIView alloc] init];
+    ZFBCommonFunctionView *topView = [[ZFBCommonFunctionView alloc] init];
     topView.backgroundColor = [UIColor cz_colorWithHex:0x3A3A3A];
     
     [self.view addSubview:topView];
