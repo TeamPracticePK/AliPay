@@ -41,8 +41,11 @@
     NSMutableArray *children = [NSMutableArray array];
     
     [children addObject:[self viewControllerWithClsName:@"ZFBHomeViewController" title:@"支付宝" imgName:@"TabBar_HomeBar"]];
+    [children addObject:[self viewControllerWithClsName:@"ZFBBusinessViewController" title:@"口碑" imgName:@"TabBar_Businesses"]];
+    [children addObject:[self viewControllerWithClsName:@"ZFBFriendsViewController" title:@"朋友" imgName:@"TabBar_Friends"]];
+    [children addObject:[self viewControllerWithClsName:@"ZFBMineViewController" title:@"我的" imgName:@"TabBar_Assets"]];
     
-    
+
     
     // 2. 设置子自控制器
     self.viewControllers = children.copy;
