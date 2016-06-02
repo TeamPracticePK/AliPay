@@ -30,7 +30,7 @@
     
     _window.backgroundColor = [UIColor whiteColor];
     
-    Class cls = NSClassFromString(@"ZFBMainViewController");
+    Class cls = NSClassFromString(@"ContainerController");
     UIViewController *vc = [[cls alloc] init];
     
     //2.设置根控制器
