@@ -27,6 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 设置导航栏样式
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+    
+}
+
+
 #pragma mark - 设置界面
 - (void)setupUI {
     // 1. 设置`导航条`的背景图片
