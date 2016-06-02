@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZFBMainViewController : UIViewController
+@interface ZFBMainViewController : UITabBarController
 
 @end

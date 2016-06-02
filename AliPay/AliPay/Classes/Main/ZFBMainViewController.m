@@ -17,6 +17,7 @@
 @implementation ZFBMainViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     [self addChildViewControllers];
@@ -37,17 +38,19 @@
 
 - (void)addChildViewControllers {
     
+    
+    
     //1. 创建控制器
     ZFBHomeViewController *vc = [[ZFBHomeViewController alloc]init];
-    
-    //1>设置图像
+        //1>设置图像
     //2>选中图像
     //3>标题
     
     
-    
     //2.添加到自控制器中
-    self.inputViewControllers = @[vc];
+//    self.viewControllers = @[vc];
+    self.viewControllers = @[vc];
+    
     
 }
 
