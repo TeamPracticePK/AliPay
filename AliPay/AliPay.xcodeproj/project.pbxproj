@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1319561E1D004277008FE55B /* ZFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1319561D1D004277008FE55B /* ZFBHomeViewController.m */; };
+		131956211D0042C1008FE55B /* ZFBCommonFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131956201D0042C1008FE55B /* ZFBCommonFunctionView.m */; };
+		131956251D0048FC008FE55B /* homeCommonFunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 131956241D0048FC008FE55B /* homeCommonFunctions.plist */; };
+		131956281D005150008FE55B /* ZFBFunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 131956271D005150008FE55B /* ZFBFunctionModel.m */; };
 		18A489D51CFFC4D200E0C4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A489D41CFFC4D200E0C4E8 /* main.m */; };
 		18A489D81CFFC4D200E0C4E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A489D71CFFC4D200E0C4E8 /* AppDelegate.m */; };
 		18A489DB1CFFC4D200E0C4E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A489DA1CFFC4D200E0C4E8 /* ViewController.m */; };
@@ -31,7 +35,6 @@
 		18A48A251CFFCA5800E0C4E8 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A201CFFCA5800E0C4E8 /* UILabel+CZAddition.m */; };
 		18A48A331CFFCDFE00E0C4E8 /* ZFBBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A321CFFCDFE00E0C4E8 /* ZFBBusinessViewController.m */; };
 		18A48A361CFFCE2100E0C4E8 /* ZFBFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A351CFFCE2100E0C4E8 /* ZFBFriendsViewController.m */; };
-		18A48A391CFFCE4A00E0C4E8 /* ZFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A381CFFCE4A00E0C4E8 /* ZFBHomeViewController.m */; };
 		18A48A3F1CFFCE8800E0C4E8 /* ZFBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */; };
 		18A48A421CFFCEA600E0C4E8 /* ZFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */; };
 		18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */; };
@@ -40,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1319561C1D004277008FE55B /* ZFBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBHomeViewController.h; sourceTree = "<group>"; };
+		1319561D1D004277008FE55B /* ZFBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBHomeViewController.m; sourceTree = "<group>"; };
+		1319561F1D0042C1008FE55B /* ZFBCommonFunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBCommonFunctionView.h; sourceTree = "<group>"; };
+		131956201D0042C1008FE55B /* ZFBCommonFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBCommonFunctionView.m; sourceTree = "<group>"; };
+		131956241D0048FC008FE55B /* homeCommonFunctions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeCommonFunctions.plist; sourceTree = "<group>"; };
+		131956261D005150008FE55B /* ZFBFunctionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBFunctionModel.h; sourceTree = "<group>"; };
+		131956271D005150008FE55B /* ZFBFunctionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBFunctionModel.m; sourceTree = "<group>"; };
 		18A489D01CFFC4D200E0C4E8 /* AliPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A489D41CFFC4D200E0C4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A489D61CFFC4D200E0C4E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,8 +101,6 @@
 		18A48A321CFFCDFE00E0C4E8 /* ZFBBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessViewController.m; sourceTree = "<group>"; };
 		18A48A341CFFCE2100E0C4E8 /* ZFBFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBFriendsViewController.h; sourceTree = "<group>"; };
 		18A48A351CFFCE2100E0C4E8 /* ZFBFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBFriendsViewController.m; sourceTree = "<group>"; };
-		18A48A371CFFCE4A00E0C4E8 /* ZFBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBHomeViewController.h; sourceTree = "<group>"; };
-		18A48A381CFFCE4A00E0C4E8 /* ZFBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBHomeViewController.m; sourceTree = "<group>"; };
 		18A48A3D1CFFCE8800E0C4E8 /* ZFBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMainViewController.h; sourceTree = "<group>"; };
 		18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMainViewController.m; sourceTree = "<group>"; };
 		18A48A401CFFCEA600E0C4E8 /* ZFBMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMineViewController.h; sourceTree = "<group>"; };
@@ -116,6 +124,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1319561A1D004277008FE55B /* 常用功能 */ = {
+			isa = PBXGroup;
+			children = (
+				131956241D0048FC008FE55B /* homeCommonFunctions.plist */,
+				1319561F1D0042C1008FE55B /* ZFBCommonFunctionView.h */,
+				131956201D0042C1008FE55B /* ZFBCommonFunctionView.m */,
+			);
+			path = "常用功能";
+			sourceTree = "<group>";
+		};
+		1319561B1D004277008FE55B /* 功能列表 */ = {
+			isa = PBXGroup;
+			children = (
+				1319561C1D004277008FE55B /* ZFBHomeViewController.h */,
+				1319561D1D004277008FE55B /* ZFBHomeViewController.m */,
+			);
+			path = "功能列表";
+			sourceTree = "<group>";
+		};
 		1385EC2A1D003B250043EF68 /* Container */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +178,6 @@
 				18A489D71CFFC4D200E0C4E8 /* AppDelegate.m */,
 				18A489D91CFFC4D200E0C4E8 /* ViewController.h */,
 				18A489DA1CFFC4D200E0C4E8 /* ViewController.m */,
-				18A489DC1CFFC4D200E0C4E8 /* Main.storyboard */,
-				18A489DF1CFFC4D200E0C4E8 /* Assets.xcassets */,
-				18A489E11CFFC4D200E0C4E8 /* LaunchScreen.storyboard */,
-				18A489E41CFFC4D200E0C4E8 /* Info.plist */,
 				18A489D31CFFC4D200E0C4E8 /* Supporting Files */,
 			);
 			path = AliPay;
@@ -163,6 +186,10 @@
 		18A489D31CFFC4D200E0C4E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18A489DC1CFFC4D200E0C4E8 /* Main.storyboard */,
+				18A489DF1CFFC4D200E0C4E8 /* Assets.xcassets */,
+				18A489E11CFFC4D200E0C4E8 /* LaunchScreen.storyboard */,
+				18A489E41CFFC4D200E0C4E8 /* Info.plist */,
 				18A489D41CFFC4D200E0C4E8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -281,8 +308,10 @@
 		18A48A2E1CFFCCA500E0C4E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				18A48A371CFFCE4A00E0C4E8 /* ZFBHomeViewController.h */,
-				18A48A381CFFCE4A00E0C4E8 /* ZFBHomeViewController.m */,
+				1319561A1D004277008FE55B /* 常用功能 */,
+				1319561B1D004277008FE55B /* 功能列表 */,
+				131956261D005150008FE55B /* ZFBFunctionModel.h */,
+				131956271D005150008FE55B /* ZFBFunctionModel.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -367,6 +396,7 @@
 				18A48A061CFFC97D00E0C4E8 /* Info.plist in Resources */,
 				18A489E31CFFC4D200E0C4E8 /* LaunchScreen.storyboard in Resources */,
 				18A489E01CFFC4D200E0C4E8 /* Assets.xcassets in Resources */,
+				131956251D0048FC008FE55B /* homeCommonFunctions.plist in Resources */,
 				18A489DE1CFFC4D200E0C4E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,18 +412,20 @@
 				18A48A0C1CFFC97D00E0C4E8 /* MASViewConstraint.m in Sources */,
 				18A48A221CFFCA5800E0C4E8 /* NSAttributedString+CZAdditon.m in Sources */,
 				18A48A071CFFC97D00E0C4E8 /* MASCompositeConstraint.m in Sources */,
+				131956281D005150008FE55B /* ZFBFunctionModel.m in Sources */,
+				131956211D0042C1008FE55B /* ZFBCommonFunctionView.m in Sources */,
 				18A48A3F1CFFCE8800E0C4E8 /* ZFBMainViewController.m in Sources */,
 				18A48A331CFFCDFE00E0C4E8 /* ZFBBusinessViewController.m in Sources */,
 				18A48A361CFFCE2100E0C4E8 /* ZFBFriendsViewController.m in Sources */,
 				18A48A241CFFCA5800E0C4E8 /* UIColor+CZAddition.m in Sources */,
 				18A48A0D1CFFC97D00E0C4E8 /* NSArray+MASAdditions.m in Sources */,
 				18A48A421CFFCEA600E0C4E8 /* ZFBMineViewController.m in Sources */,
+				1319561E1D004277008FE55B /* ZFBHomeViewController.m in Sources */,
 				18A489DB1CFFC4D200E0C4E8 /* ViewController.m in Sources */,
 				18A48A211CFFCA5800E0C4E8 /* NSArray+CZAddition.m in Sources */,
 				18A489D81CFFC4D200E0C4E8 /* AppDelegate.m in Sources */,
 				F17AE6311D004E2800331C18 /* vitasphereViewController.m in Sources */,
 				18A48A251CFFCA5800E0C4E8 /* UILabel+CZAddition.m in Sources */,
-				18A48A391CFFCE4A00E0C4E8 /* ZFBHomeViewController.m in Sources */,
 				18A48A0A1CFFC97D00E0C4E8 /* MASLayoutConstraint.m in Sources */,
 				18A489D51CFFC4D200E0C4E8 /* main.m in Sources */,
 				18A48A101CFFC97D00E0C4E8 /* ViewController+MASAdditions.m in Sources */,
