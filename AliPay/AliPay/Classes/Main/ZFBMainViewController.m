@@ -43,8 +43,14 @@
     //1. 创建控制器
     ZFBHomeViewController *vc = [[ZFBHomeViewController alloc]init];
         //1>设置图像
+    vc.tabBarItem.image = [UIImage imageNamed:@"TabBar_HomeBar"];
+    
     //2>选中图像
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
+    
     //3>标题
+    vc.title = @"支付宝";
+    
     
     
     //2.添加到自控制器中
