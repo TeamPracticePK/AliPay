@@ -28,8 +28,13 @@
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    _window.backgroundColor = [UIColor whiteColor];
+    
+    Class cls = NSClassFromString(@"ZFBMainViewController");
+    UIViewController *vc = [[cls alloc] init];
+    
     //2.设置根控制器
-    _window.rootViewController = [[ContainerController alloc] init];
+    _window.rootViewController = vc;
     
     //3.让 window 成为主窗口并可见
     [_window makeKeyAndVisible];
