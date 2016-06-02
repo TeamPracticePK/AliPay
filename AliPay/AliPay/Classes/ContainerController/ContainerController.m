@@ -45,9 +45,28 @@
     UIPanGestureRecognizer * panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(change:)];
     [self.view addGestureRecognizer:panGesture];
     
+    
 }
 
 - (void)change:(UIPanGestureRecognizer* )pan{
+    
+     CGFloat margen = 100;
+//    CGPoint p = [pan velocityInView:self.view];
+    
+    
+//    if (p.x>100) {
+//        {CGRect rect = _vc.view.frame;
+//            rect.origin.x = self.view.bounds.size.width - margen;
+//            
+//            [UIView animateWithDuration:0.3 animations:^{
+//                
+//                _vc.view.frame = rect;
+//            }];
+//        }
+//
+//        
+//    }
+    
  
     CGPoint  nowPoint = [pan translationInView:self.view];
 //    NSLog(@"%@",NSStringFromCGPoint(nowPoint));
@@ -57,7 +76,8 @@
     CGAffineTransform transform = _vc.view.transform;
     CGFloat vcXFrame = _vc.view.frame.origin.x;
     CGFloat fload = vcXFrame+nowPoint.x;
-    CGFloat margen = 100;
+   
+    
     
 //    NSLog(@"%f",vcXFrame);
     if (fload <= 0||fload >= (self.view.bounds.size.width-margen)) {
@@ -75,24 +95,31 @@
             break;
             
         case UIGestureRecognizerStateEnded:
+        {
             if (_vc.view.frame.origin.x > self.view.frame.size.width *0.5) {
                 
                 NSLog(@"%f",(_vc.view.frame.origin.x));
                 transform  = CGAffineTransformTranslate(transform, self.view.bounds.size.width-margen, 0);
                 CGRect rect = _vc.view.frame;
                 rect.origin.x = self.view.bounds.size.width - margen;
-                _vc.view.frame = rect;
                 
-            }else{
-                _vc.view.frame = self.view.bounds;
+                [UIView animateWithDuration:0.3 animations:^{
+                    
+                    _vc.view.frame = rect;
+                }];
                 
+                return;
             }
-        
-            break;
+        }
+            
         case UIGestureRecognizerStateFailed:
         case UIGestureRecognizerStateCancelled:
-            
-            
+        {
+            [UIView animateWithDuration:0.3 animations:^{
+                _vc.view.frame = self.view.bounds;
+                
+            }];
+        }
             break;
             
         default:

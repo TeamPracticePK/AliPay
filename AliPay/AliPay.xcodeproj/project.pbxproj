@@ -36,6 +36,7 @@
 		18A48A421CFFCEA600E0C4E8 /* ZFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */; };
 		18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */; };
 		F17AE62E1D001D3900331C18 /* ContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AE62D1D001D3900331C18 /* ContainerController.m */; };
+		F17AE6311D004E2800331C18 /* vitasphereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AE6301D004E2800331C18 /* vitasphereViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,8 @@
 		18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBNavigationController.m; sourceTree = "<group>"; };
 		F17AE62C1D001D3900331C18 /* ContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerController.h; path = AliPay/Classes/ContainerController/ContainerController.h; sourceTree = SOURCE_ROOT; };
 		F17AE62D1D001D3900331C18 /* ContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerController.m; path = AliPay/Classes/ContainerController/ContainerController.m; sourceTree = SOURCE_ROOT; };
+		F17AE62F1D004E2800331C18 /* vitasphereViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vitasphereViewController.h; sourceTree = "<group>"; };
+		F17AE6301D004E2800331C18 /* vitasphereViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vitasphereViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 			children = (
 				18A48A341CFFCE2100E0C4E8 /* ZFBFriendsViewController.h */,
 				18A48A351CFFCE2100E0C4E8 /* ZFBFriendsViewController.m */,
+				F17AE62F1D004E2800331C18 /* vitasphereViewController.h */,
+				F17AE6301D004E2800331C18 /* vitasphereViewController.m */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				18A489DB1CFFC4D200E0C4E8 /* ViewController.m in Sources */,
 				18A48A211CFFCA5800E0C4E8 /* NSArray+CZAddition.m in Sources */,
 				18A489D81CFFC4D200E0C4E8 /* AppDelegate.m in Sources */,
+				F17AE6311D004E2800331C18 /* vitasphereViewController.m in Sources */,
 				18A48A251CFFCA5800E0C4E8 /* UILabel+CZAddition.m in Sources */,
 				18A48A391CFFCE4A00E0C4E8 /* ZFBHomeViewController.m in Sources */,
 				18A48A0A1CFFC97D00E0C4E8 /* MASLayoutConstraint.m in Sources */,
