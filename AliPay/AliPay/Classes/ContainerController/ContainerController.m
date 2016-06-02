@@ -50,35 +50,45 @@
 - (void)change:(UIPanGestureRecognizer* )pan{
  
     CGPoint  nowPoint = [pan translationInView:self.view];
-    NSLog(@"%@",NSStringFromCGPoint(nowPoint));
+//    NSLog(@"%@",NSStringFromCGPoint(nowPoint));
+    
     [pan setTranslation:CGPointZero inView:self.view];
+    
     CGAffineTransform transform = _vc.view.transform;
     CGFloat vcXFrame = _vc.view.frame.origin.x;
     CGFloat fload = vcXFrame+nowPoint.x;
     CGFloat margen = 100;
     
-    if (fload <= 0||fload>= (self.view.bounds.size.width-margen)) {
+//    NSLog(@"%f",vcXFrame);
+    if (fload <= 0||fload >= (self.view.bounds.size.width-margen)) {
         return;
     }
     
     switch (pan.state) {
         case UIGestureRecognizerStateBegan:
         case UIGestureRecognizerStateChanged:
-            
+        
             transform = CGAffineTransformTranslate(transform, nowPoint.x, 0);
             
             _vc.view.transform = transform;
+        
             break;
             
         case UIGestureRecognizerStateEnded:
-            if (_vc.view.frame.origin.x > self.view.frame.origin.x*0.5) {
-                _vc.view.transform  = CGAffineTransformTranslate(transform, self.view.bounds.size.width-margen, 0);
+            if (_vc.view.frame.origin.x > self.view.frame.size.width *0.5) {
+                
+                NSLog(@"%f",(_vc.view.frame.origin.x));
+                transform  = CGAffineTransformTranslate(transform, self.view.bounds.size.width-margen, 0);
+                CGRect rect = _vc.view.frame;
+                rect.origin.x = self.view.bounds.size.width - margen;
+                _vc.view.frame = rect;
                 
             }else{
-                _vc.view.transform = CGAffineTransformIdentity;
+                _vc.view.frame = self.view.bounds;
+                
             }
+        
             break;
-            
         case UIGestureRecognizerStateFailed:
         case UIGestureRecognizerStateCancelled:
             
@@ -87,6 +97,8 @@
             
         default:
             break;
+            
+
     }
 }
 
