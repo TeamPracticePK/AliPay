@@ -61,7 +61,10 @@
     vc.tabBarItem.image = [UIImage imageNamed:imgName];
     
     // 2> 选中图像
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:[imgName stringByAppendingString:@"_Sel"]];
+    UIImage *imageSel = [UIImage imageNamed:[imgName stringByAppendingString:@"_Sel"]];
+    vc.tabBarItem.selectedImage = [imageSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+
     
     // 3> 标题 - 既可以设置 nav 的标题，也可以设置 tabbar 的标题
     vc.title = title;
