@@ -69,7 +69,11 @@
     // 3> 标题 - 既可以设置 nav 的标题，也可以设置 tabbar 的标题
     vc.title = title;
     
-    return vc;
+    // 2. 创建 Nav 控制器
+    ZFBNavigationController *nav = [[ZFBNavigationController alloc] initWithRootViewController:vc];
+
+    
+    return nav;
 }
 
 

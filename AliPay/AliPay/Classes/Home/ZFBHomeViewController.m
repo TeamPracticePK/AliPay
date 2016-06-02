@@ -7,6 +7,7 @@
 //
 
 #import "ZFBHomeViewController.h"
+#import "Masonry.h"
 
 @interface ZFBHomeViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupUI];
     
     self.view.backgroundColor = [UIColor blueColor];
     
@@ -26,15 +28,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 设置界面
+- (void)setupUI {
+    
+    // 顶部视图 UIView
+    UIView *topView = [[UIView alloc] init];
+    topView.backgroundColor = [UIColor darkGrayColor];
+    
+    [self.view addSubview:topView];
+    
+    [topView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.equalTo(self.view);
+        make.height.mas_equalTo(115);
+    }];
+ 
+    // 底部视图 UICollectionView
+    
+    UIView *bottomView = [[UIView alloc ]init];
+    bottomView.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:bottomView];
+    
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(topView.mas_bottom);
+    }];
+    
 }
-*/
 
 @end

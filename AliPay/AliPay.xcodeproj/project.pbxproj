@@ -239,9 +239,9 @@
 				F17AE62C1D001D3900331C18 /* ContainerController.h */,
 				F17AE62D1D001D3900331C18 /* ContainerController.m */,
 				18A48A2F1CFFCCA500E0C4E8 /* Main */,
+				18A48A2E1CFFCCA500E0C4E8 /* Home */,
 				18A48A2C1CFFCCA500E0C4E8 /* Business */,
 				18A48A2D1CFFCCA500E0C4E8 /* Friends */,
-				18A48A2E1CFFCCA500E0C4E8 /* Home */,
 				18A48A301CFFCCA500E0C4E8 /* Mine */,
 			);
 			path = Classes;
