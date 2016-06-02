@@ -8,6 +8,7 @@
 
 #import "ZFBHomeViewController.h"
 #import "Masonry.h"
+#import "CZAdditions.h"
 
 @interface ZFBHomeViewController ()
 
@@ -33,7 +34,7 @@
     
     // 顶部视图 UIView
     UIView *topView = [[UIView alloc] init];
-    topView.backgroundColor = [UIColor darkGrayColor];
+    topView.backgroundColor = [UIColor cz_colorWithHex:0x3A3A3A];
     
     [self.view addSubview:topView];
     
