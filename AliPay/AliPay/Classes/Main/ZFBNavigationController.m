@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    [self setupUI];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +27,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 设置界面
+- (void)setupUI {
+    // 1. 设置`导航条`的背景图片
+    /*
+     UIBarMetricsDefault,               默认(竖屏的背景图片)
+     UIBarMetricsCompact,               压缩->横屏
+     UIBarMetricsDefaultPrompt = 101,   带提示(几乎不用，占地方)
+     UIBarMetricsCompactPrompt          压缩带提示(横屏)
+     */
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar7"] forBarMetrics:UIBarMetricsDefault];
 }
-*/
+
+
 
 @end
