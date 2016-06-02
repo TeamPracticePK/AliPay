@@ -8,10 +8,16 @@
 
 #import "ZFBHomeViewController.h"
 #import "ZFBCommonFunctionView.h"
+#import "ZFBFunctionModel.h"
 #import "Masonry.h"
 #import "CZAdditions.h"
 
 @interface ZFBHomeViewController ()
+
+/*!
+ *  常用功能视图
+ */
+@property (nonatomic, weak) ZFBCommonFunctionView *commonFunctionView;
 
 @end
 
@@ -22,7 +28,9 @@
     
     [self setupUI];
     
-    self.view.backgroundColor = [UIColor blueColor];
+    // 加载数据
+    NSArray *commonList = [NSArray cz_objectListWithPlistName:@"homeCommonFunctions.plist" clsName:@"ZFBFunctionModel"];
+    _commonFunctionView.functionList = commonList;
     
 }
 
@@ -43,6 +51,9 @@
         make.left.top.right.equalTo(self.view);
         make.height.mas_equalTo(115);
     }];
+    
+    // 记录成员变量
+    _commonFunctionView = topView;
  
     // 底部视图 UICollectionView
     
@@ -55,6 +66,10 @@
         make.left.right.bottom.equalTo(self.view);
         make.top.equalTo(topView.mas_bottom);
     }];
+    
+    
+    
+    
     
 }
 

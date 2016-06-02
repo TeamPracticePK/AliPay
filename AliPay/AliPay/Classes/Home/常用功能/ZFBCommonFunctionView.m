@@ -7,6 +7,10 @@
 //
 
 #import "ZFBCommonFunctionView.h"
+#import "CZAdditions.h"
+#import "ZFBFunctionModel.h"
+
+#import "Masonry.h"
 
 @implementation ZFBCommonFunctionView
 
@@ -19,9 +23,16 @@
     return self;
 }
 
+- (void)setFunctionList:(NSArray<ZFBFunctionModel *> *)functionList {
+    _functionList = functionList;
+    
+}
+
 #pragma mark - 设置界面
 - (void)setupUI {
     
+    
+
     
     
 }

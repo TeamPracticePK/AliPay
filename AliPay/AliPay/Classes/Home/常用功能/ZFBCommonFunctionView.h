@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ZFBFunctionModel;
 
 /*!
  *  常用功能视图
  */
 
 @interface ZFBCommonFunctionView : UIView
+
+@property (nonatomic, strong) NSArray <ZFBFunctionModel *> *functionList;
 
 @end
