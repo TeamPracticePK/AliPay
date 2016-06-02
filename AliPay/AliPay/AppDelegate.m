@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZFBMainViewController.h"
+#import "ContainerController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,7 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2.设置根控制器
-    _window.rootViewController = [[ZFBMainViewController alloc] init];
+    _window.rootViewController = [[ContainerController alloc] init];
     
     //3.让 window 成为主窗口并可见
     [_window makeKeyAndVisible];

@@ -35,6 +35,7 @@
 		18A48A3F1CFFCE8800E0C4E8 /* ZFBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A3E1CFFCE8800E0C4E8 /* ZFBMainViewController.m */; };
 		18A48A421CFFCEA600E0C4E8 /* ZFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */; };
 		18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */; };
+		F17AE62E1D001D3900331C18 /* ContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AE62D1D001D3900331C18 /* ContainerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,8 @@
 		18A48A411CFFCEA600E0C4E8 /* ZFBMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMineViewController.m; sourceTree = "<group>"; };
 		18A48A431CFFE1A000E0C4E8 /* ZFBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBNavigationController.h; sourceTree = "<group>"; };
 		18A48A441CFFE1A000E0C4E8 /* ZFBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBNavigationController.m; sourceTree = "<group>"; };
+		F17AE62C1D001D3900331C18 /* ContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerController.h; path = AliPay/Classes/ContainerController/ContainerController.h; sourceTree = SOURCE_ROOT; };
+		F17AE62D1D001D3900331C18 /* ContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerController.m; path = AliPay/Classes/ContainerController/ContainerController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 		18A48A2B1CFFCCA500E0C4E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F17AE62C1D001D3900331C18 /* ContainerController.h */,
+				F17AE62D1D001D3900331C18 /* ContainerController.m */,
 				18A48A2F1CFFCCA500E0C4E8 /* Main */,
 				18A48A2C1CFFCCA500E0C4E8 /* Business */,
 				18A48A2D1CFFCCA500E0C4E8 /* Friends */,
@@ -379,6 +384,7 @@
 				18A489D51CFFC4D200E0C4E8 /* main.m in Sources */,
 				18A48A101CFFC97D00E0C4E8 /* ViewController+MASAdditions.m in Sources */,
 				18A48A451CFFE1A000E0C4E8 /* ZFBNavigationController.m in Sources */,
+				F17AE62E1D001D3900331C18 /* ContainerController.m in Sources */,
 				18A48A0F1CFFC97D00E0C4E8 /* View+MASAdditions.m in Sources */,
 				18A48A231CFFCA5800E0C4E8 /* NSObject+CZAddition.m in Sources */,
 				18A48A0B1CFFC97D00E0C4E8 /* MASViewAttribute.m in Sources */,
@@ -536,6 +542,7 @@
 				18A489E91CFFC4D200E0C4E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
