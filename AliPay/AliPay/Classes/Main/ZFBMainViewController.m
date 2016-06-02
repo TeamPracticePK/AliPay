@@ -37,29 +37,34 @@
  */
 
 - (void)addChildViewControllers {
+    //1.创建数组
+    NSMutableArray *children = [NSMutableArray array];
+    
+    [children addObject:[self viewControllerWithClsName:@"ZFBHomeViewController" title:@"支付宝" imgName:@"TabBar_HomeBar"]];
     
     
     
-    //1. 创建控制器
-    ZFBHomeViewController *vc = [[ZFBHomeViewController alloc]init];
-        //1>设置图像
-    vc.tabBarItem.image = [UIImage imageNamed:@"TabBar_HomeBar"];
-    
-    //2>选中图像
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
-    
-    //3>标题
-    vc.title = @"支付宝";
-    
-    
-    
-    //2.添加到自控制器中
-//    self.viewControllers = @[vc];
-    self.viewControllers = @[vc];
-    
-    
+    // 2. 设置子自控制器
+    self.viewControllers = children.copy;
 }
 
+- (UIViewController *)viewControllerWithClsName:(NSString *)clsName title:(NSString *)title imgName:(NSString *)imgName {
+    // 1. 创建控制器
+    // 1> 用 clsName 创建一个类，运行时的技巧
+    Class cls = NSClassFromString(clsName);
+    UIViewController *vc = [[cls alloc] init];
+    
+    // 1> 设置图像
+    vc.tabBarItem.image = [UIImage imageNamed:imgName];
+    
+    // 2> 选中图像
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:[imgName stringByAppendingString:@"_Sel"]];
+    
+    // 3> 标题 - 既可以设置 nav 的标题，也可以设置 tabbar 的标题
+    vc.title = title;
+    
+    return vc;
+}
 
 
 
